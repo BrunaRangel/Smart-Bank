@@ -1,34 +1,6 @@
 export const extratoLista = {
     updates: [
       {
-        id: "311541",
-        type: "Pizzaria",
-        value: "160,00",
-        date: "22 JUN",
-        from: "Mamma Jamma",
-      },
-      {
-        id: "841312",
-        type: "Transporte",
-        value: "22,00",
-        date: "22 JUN",
-        from: "Uber",
-      },
-      {
-        id: "794162",
-        type: "Outros",
-        value: "230,00",
-        date: "20 JUN",
-        from: "Amazon",
-      },
-      {
-        id: "845520",
-        type: "Transporte",
-        value: "10,00",
-        date: "13 JUN",
-        from: "Uber",
-      },
-      {
         id: "123131321",
         type: "Restaurante",
         value: "150,00",
