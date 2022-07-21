@@ -7,7 +7,7 @@ import Account from "../Account";
 const Container = () => {
   return (
     <S.Container>
-      <h1>Olá Fulano!</h1>
+      <S.Titulo>Olá Fulano!</S.Titulo>
       <S.Conteudo>
         <Account />
       </S.Conteudo>

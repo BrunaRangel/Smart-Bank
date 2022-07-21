@@ -14,3 +14,8 @@ export const Conteudo = styled.section`
     flex-direction: column;
   }
 `;
+
+export const Titulo = styled.h1`
+  color: ${({ theme }) => theme.text};
+  padding: 25px 0;
+`;
