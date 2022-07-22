@@ -1,18 +1,22 @@
 import React from "react";
-import * as S from '../Header/styles'
+
+//icon
 import bank_logo from "../../assets/images/bank_logo.svg";
+
+//UI
+import {ContainerHeader, Logo, BtnHeader} from "../../Components/UI";
 
 const Header = () => {
   return (
-    <S.ContainerHeader>
-      <S.Logo src={bank_logo} alt="Logo Smart Bank" />
+    <ContainerHeader>
+      <Logo src={bank_logo} alt="Logo Smart Bank" />
       <div>
-        <S.Btn primary href="https://google.com">
+        <BtnHeader primary href="https://google.com">
           Ajuda
-        </S.Btn>
-        <S.Btn href="https://google.com">Sair</S.Btn>
+        </BtnHeader>
+        <BtnHeader href="https://google.com">Sair</BtnHeader>
       </div>
-    </S.ContainerHeader>
+    </ContainerHeader>
   );
 };
 

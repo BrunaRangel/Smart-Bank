@@ -1,19 +1,21 @@
 import React from "react";
-import * as S from '../Container/styles'
 
+//Components
 import Account from "../Account";
 import Extract from "../Extract";
 
+//UI
+import {ContainerMain, Titulo, Conteudo} from "../../Components/UI";
 
 const Container = () => {
   return (
-    <S.Container>
-      <S.Titulo>Olá Fulano!</S.Titulo>
-      <S.Conteudo>
+    <ContainerMain>
+      <Titulo>Olá Fulano!</Titulo>
+      <Conteudo>
         <Account />
         <Extract />
-      </S.Conteudo>
-    </S.Container>
+      </Conteudo>
+    </ContainerMain>
   );
 };
 
