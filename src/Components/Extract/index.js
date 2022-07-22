@@ -1,6 +1,12 @@
 import React from "react";
-import { Box, Botao } from "../../Components/UI";
+
+//UI
+import { Box, Button } from "../../Components/UI";
+
+//info
 import { extratoLista } from "../../info";
+
+//Components
 import Items from "../Items";
 
 const Extract = () => {
@@ -11,7 +17,7 @@ const Extract = () => {
           <Items key={id} type={type} from={from} value={value} date={date} />
         );
       })}
-      <Botao>Ver Mais</Botao>
+      <Button>Ver Mais</Button>
     </Box>
   );
 };

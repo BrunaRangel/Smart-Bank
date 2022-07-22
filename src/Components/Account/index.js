@@ -1,18 +1,21 @@
 import React, { useState } from "react";
-import * as S from '../Account/styles'
 
+//icons
 import privado from "../../assets/images/privado.svg";
 import olho_icone from "../../assets/images/olho.svg";
 import dinheiro from "../../assets/images/dinheiro.svg";
 
+//UI
 import {
-  Icone,
   Box,
-  Botao,
-  Saldo,
-  Detalhe,
+  BoxBalance,
+  IconeMargin,
   IconeTema,
+  Balance,
+  Detail,
+  Button
 } from "../../Components/UI";
+
 
 const Account = () => {
   const [toggleState, untoggle] = useState(true);
@@ -24,24 +27,23 @@ const Account = () => {
   return (
     <Box>
       <h2>Conta</h2>
-      <div style={{ fontSize: "26px", padding: "20px 0" }}>
+      <BoxBalance>
         Saldo disponível{" "}
         <span>
           <IconeTema src={dinheiro} alt="Ícone Saldo" />
         </span>
         {toggleState ? (
-          <Saldo>
-            <Detalhe>R$</Detalhe> 0,00{" "}
-          </Saldo>
+          <Balance>
+            <Detail>R$</Detail> 0,00{" "}
+          </Balance>
         ) : null}
-      </div>
-
-      <Botao onClick={toggleHandler}>
-        <S.IconeMargin
+      </BoxBalance>
+      <Button onClick={toggleHandler}>
+        <IconeMargin
           src={toggleState ? privado : olho_icone}
           alt="Privacidade do Saldo"
         />
-      </Botao>
+      </Button>
     </Box>
   );
 };
